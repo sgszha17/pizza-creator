@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+  <head>
+    <mate charset="utf-8"/>
+    <mate http-equiv="X-UA-Compatible" content="IE">
+    <title>Pizza Creator</title>
+    <mate name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="Siyu.css">
+  </head>
+  <body>
+    <section class="pizza-creator-app">
+      <h1>Pizza Creator</h1>
+      <!-- <form action=""> -->
+      <section class="pizza-pic">
+        <div class="pizza">
+          <div class="board">
+            <img src = "assets/board.svg">
+          </div>
+          <div class="base">
+            <img src = "assets/base.svg">
+          </div>
+          <div class="topping">
+            <img src = "assets/toppings/anchovies.svg">
+            <img src = "assets/toppings/bacons.svg">
+            <img src = "assets/toppings/basils.svg">
+            <img src = "assets/toppings/chilies.svg">
+            <img src = "assets/toppings/mozzarellas.svg">
+            <img src = "assets/toppings/mushrooms.svg">
+            <img src = "assets/toppings/olives.svg">
+            <img src = "assets/toppings/onions.svg">
+            <img src = "assets/toppings/peppers.svg">
+
+          </div>
+        </div>
+      </section>
+      
+      <section class="content-container">
+        <form class="submit">
+          <section class="user_detail">
+            <h2>Enter your detail</h2>
+            <div class="user_detail_content">
+              <div class="name">
+                <div class="label-title">NAME</div>
+                <input type="text">
+              </div>
+              <div class="email">
+                <div class="label-title">EMAIL</div>
+                <input type="email">
+              </div>
+              <div class="confirmEmail">
+                  <div class="label-title">CONFRIM EMAIL</div>
+                  <input type="email">
+              </div>
+              <div class="address">
+                  <div class="label-title">ADDRESS</div>
+                  <input type="text">
+              </div>
+              <div class="postcode">
+                  <div class="label-title">POSTCODE</div>
+                  <input type="text">
+              </div>
+              <div class="contectNumber">
+                  <div class="label-title">CONTECT NUMBER</div>
+                  <input type="number">
+              </div>
+
+            </div>
+          </section>
+          
+          <section class="topping-container">
+            <h2>Choose your toppings</h2>
+            <div class="toppings-list" id="toppingsChoiceForm"></div>
+          </section>
+
+          <section class="summary-container">
+              <h2>Summary</h2>
+              <div id = "orderItemList" class="items"></div>
+              <hr/>
+                <p class="price_summary" id = "orderSummary"></p>
+                    <button type="submit">
+                        Submit
+                      </button>
+            </section>
+        </form>
+        </section>
+      <!-- </form> -->
+
+
+      </section>
+    </section>
+    <script src="Siyu.js"></script>
+  </body>
+ 
+</html>
